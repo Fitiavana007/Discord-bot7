@@ -92,10 +92,6 @@ Client.on("message", message => {
        message.channel.send(matthieu[random]) ;
         }
     
-    //!geffrey
-    if(message.content == prefix + "geffrey"){
-        message.channel.send("coming soon...") ;
-    }
 
     //!chien
     if(message.content == prefix + "chien"){
