@@ -112,6 +112,20 @@ Client.on("message", message => {
         
     } }
     
+    //!pierre-feuille-ciseau
+    if(message.content.startsWith(prefix + "pfc")){
+        let mention = message.mentions.members.first() ;
+        let replies = ["<@" + message.member.id + "> gagne avec la pierre contre le ciseau de ", "<@" + message.member.id + "> perd avec la pierre contre la feuille de ", "<@" + message.member.id + "> fais pierre en même temps que ", "<@" + message.member.id + "> gagne avec la feuille contre la pierre de ", "<@" + message.member.id + "> perd avec la feuille contre le ciseau de ", "<@" + message.member.id + "> fais la feuille en même temps que ", "<@" + message.member.id + "> gagne avec le ciseau contre la feuille de ", "<@" + message.member.id + "> perd avec le ciseau contre la pierre de ", "<@" + message.member.id + "> fais ciseau en même temps que " ] ; 
+        let random = Math.floor(Math.random() * replies.length) ;
+
+        if (mention == undefined){
+            message.reply("T'as oublié de ping quelqu'un connard") ;
+        }
+            else {
+            message.channel.send(replies[random] + "<@" + mention + ">") ;
+        
+    } }
+    
     //!geffrey
     if(message.content == prefix + "geffrey"){
         message.channel.send("coming soon...") ;
