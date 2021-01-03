@@ -80,7 +80,7 @@ Client.on("message", message => {
 
     //!nico
     if(message.content.startsWith(prefix + "nico")){
-        let matthieu = ["Il est coincé dans les bouchon", "guillaume duo genshin ?", "redoublant KEKW", "nik le groupe 2", "chien"] ;
+        let matthieu = ["Il est coincé dans les bouchon", "guillaume duo genshin ?", "redoublant :KEKW:", "nik le groupe 2", "chien"] ;
         let random = Math.floor(Math.random() * matthieu.length) ;
         message.channel.send(matthieu[random]) ;
     }
