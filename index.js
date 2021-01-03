@@ -35,11 +35,11 @@ Client.on("message", message => {
 
     //!boss
     if(message.content == prefix + "boss"){
-        message.channel.send("BOS :muscle:") ;
+        message.channel.send("BOSS :muscle:") ;
     }
 
         //!cheh
-        if(message.content == prefix + "cheh"){
+        if(message.content == "cheh"){
             message.channel.send("CHEH CHEH CHEH") ;
         }
 
