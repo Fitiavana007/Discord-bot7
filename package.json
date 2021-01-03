@@ -1,0 +1,15 @@
+{
+  "name": "node-bot-discord-qi",
+  "version": "1.0.0",
+  "description": "Bot pour des commandes discord.",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Boss",
+  "license": "ISC"
+}
