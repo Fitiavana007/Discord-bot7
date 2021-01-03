@@ -22,7 +22,7 @@ Client.on("message", message => {
     //!bisou
     if(message.content.startsWith(prefix + "bisou")){
         let mention = message.mentions.members.first() ;
-        let replies = ["<@" + message.member.id + "> est parti à l'hotel avec la daronne de ", "<@" + message.member.id + "> à envoyé ses pieds à " , "<@" + message.member.id + "> c'est glissé dans les DM de ", "<@" + message.member.id + "> veut date ", "<@" + message.member.id + "> à envie de boire un verre avec ", "<@" + message.member.id + "> à fais un bisou sur la joue de ", "<@" + message.member.id + "> veut aller au resto avec ", "<@" + message.member.id + "> a roulé une pelle à ", "<@" + message.member.id + "> a mis du gel hydroalcoolique puis sert la main de " ] ; 
+        let replies = ["<@" + message.member.id + "> est parti à l'hotel avec la daronne de ", "<@" + message.member.id + "> à envoyé ses pieds à " , "<@" + message.member.id + "> c'est glissé dans les DM de ", "<@" + message.member.id + "> veut date ", "<@" + message.member.id + "> à envie de boire un verre avec ", "<@" + message.member.id + "> à fais un bisou sur la joue de ", "<@" + message.member.id + "> veut aller au resto avec ", "<@" + message.member.id + "> a roulé une pelle à ", "<@" + message.member.id + "> a mis du gel hydroalcoolique puis sert la main de ", "<@" + message.member.id + "> se retrouve dans le lit de " ] ; 
         let random = Math.floor(Math.random() * replies.length) ;
 
         if (mention == undefined){
