@@ -99,9 +99,18 @@ Client.on("message", message => {
     }
 
     //!fight
-    if(message.content == prefix + "fight"){
-        message.channel.send("coming soon...") ;
-    }
+    if(message.content.startsWith(prefix + "fight")){
+        let mention = message.mentions.members.first() ;
+        let replies = ["<@" + message.member.id + "> à mis un front kick à ", "<@" + message.member.id + "> devien la pute de " , "<@" + message.member.id + "> écrase le pied de ", "<@" + message.member.id + "> se prend un coup de coude dans la nuque par ", "<@" + message.member.id + "> est une victime donc il ne peut pas fight ", "<@" + message.member.id + "> marrave la gueule de ", "<@" + message.member.id + "> se fais victimisé par ", "<@" + message.member.id + "> veut 1v1 gare du nord ", "<@" + message.member.id + "> fais des guili à ", "<@" + message.member.id + "> est un vrai bonhomme et fume ", "<@" + message.member.id + "> se prend pour Zizou et met un coup de boule à ", "<@" + message.member.id + "> à peur du vrai bonhomme ", "<@" + message.member.id + "> se transforme en ssj blue et nik la mère de ", "<@" + message.member.id + "> se fais enculé par ", "<@" + message.member.id + "> se fais rétamé par", "<@" + message.member.id + "> lache un nik ta mère pui se fais baisé par ", "<@" + message.member.id + "> veut 1v1 pierre-feuille-ciseau " ] ; 
+        let random = Math.floor(Math.random() * replies.length) ;
+
+        if (mention == undefined){
+            message.reply("T'as oublié de ping quelqu'un connard") ;
+        }
+            else {
+            message.channel.send(replies[random] + "<@" + mention + ">") ;
+        
+    } }
     
     //!geffrey
     if(message.content == prefix + "geffrey"){
