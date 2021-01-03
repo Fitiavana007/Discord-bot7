@@ -34,12 +34,12 @@ Client.on("message", message => {
     } }
 
     //!boss
-    if(message.content == "boss"){
-        message.channel.send("BOSS :muscle:") ;
+    if(message.content == prefixe + "boss"){
+        message.channel.send("Le BOSS de ce serveur est Fiti :muscle:") ;
     }
 
         //!cheh
-        if(message.content == prefix + "cheh"){
+        if(message.content == "cheh"){
             message.channel.send("CHEH CHEH CHEH") ;
         }
 
