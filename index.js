@@ -102,6 +102,12 @@ Client.on("message", message => {
     if(message.content == prefix + "fight"){
         message.channel.send("coming soon...") ;
     }
+    
+    //!geffrey
+    if(message.content == prefix + "geffrey"){
+        message.channel.send("coming soon...") ;
+    }
+
 
 })
 
