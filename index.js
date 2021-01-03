@@ -34,7 +34,7 @@ Client.on("message", message => {
     } }
 
     //!boss
-    if(message.content == prefix + "boss"){
+    if(message.content == "boss"){
         message.channel.send("BOSS :muscle:") ;
     }
 
@@ -91,6 +91,11 @@ Client.on("message", message => {
        let random = Math.floor(Math.random() * matthieu.length) ;
        message.channel.send(matthieu[random]) ;
         }
+    
+    //!geffrey
+    if(message.content == prefix + "geffrey"){
+        message.channel.send("coming soon...") ;
+    }
 
     //!chien
     if(message.content == prefix + "chien"){
