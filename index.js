@@ -35,7 +35,7 @@ Client.on("message", message => {
 
     //!boss
     if(message.content == prefix + "boss"){
-        message.channel.send("BOSS :muscle:") ;
+        message.channel.send("le BOSS de ce serveur est :muscle:") ;
     }
 
         //!cheh
