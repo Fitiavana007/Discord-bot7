@@ -45,14 +45,14 @@ Client.on("message", message => {
 
     //!farouk
     if(message.content.startsWith(prefix + "farouk")){
-        let replies = ["Cette homme est un escroc", "envoie kama please", "2003 KEKW", "EHH la moula", "dimanche 18h34 j'suis pas la" ] ; 
+        let replies = ["Cet homme est un escroc", "envoie kama please", "2003 KEKW", "EHH la moula", "dimanche 18h34 j'suis pas la" ] ; 
         let random = Math.floor(Math.random() * replies.length) ;
         message.channel.send(replies[random]) ;
     }
 
     //!hamza
     if(message.content.startsWith(prefix + "hamza")){
-        let hamza = ["1m95 et 10 cm de détente", "NARUTOOOOOOOOOO", "SASUKEEEEEEEEEEE", "go channel gacha, c'est fais pour toi", "c'est homme n'a aucun sens"] ;
+        let hamza = ["1m95 et 10 cm de détente", "NARUTOOOOOOOOOO", "SASUKEEEEEEEEEEE", "go channel gacha, c'est fais pour toi", "cet homme n'a aucun sens", "17 18 ans c'est l'age où.....:smirk: *bois son verre d'eau*"] ;
         let random = Math.floor(Math.random() * hamza.length) ;
         message.channel.send(hamza[random]) ;
     }
@@ -80,7 +80,7 @@ Client.on("message", message => {
 
     //!nico
     if(message.content.startsWith(prefix + "nico")){
-        let matthieu = ["Il est coincé dans les bouchon", "guillaume suo genshin ?", "redoublant KEKW", "nik le groupe 2", "chien"] ;
+        let matthieu = ["Il est coincé dans les bouchon", "guillaume duo genshin ?", "redoublant KEKW", "nik le groupe 2", "chien"] ;
         let random = Math.floor(Math.random() * matthieu.length) ;
         message.channel.send(matthieu[random]) ;
     }
