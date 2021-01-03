@@ -39,7 +39,7 @@ Client.on("message", message => {
     }
 
         //!cheh
-        if(message.content == "cheh"){
+        if(message.content == prefixe + "cheh"){
             message.channel.send("CHEH CHEH CHEH") ;
         }
 
